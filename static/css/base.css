@@ -8,10 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-}
-
-
-/* from Bulma */
+}/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -170,8 +167,6 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-
 
 /* -------------------------------- Media Queries */
 
