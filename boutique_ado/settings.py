@@ -27,6 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'some value if your key is not set in 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
+
 ALLOWED_HOSTS = ['eljefe111944boutiqueado.herokuapp.com', 'localhost']
 
 
@@ -125,7 +126,7 @@ WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
